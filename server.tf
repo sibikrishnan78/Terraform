@@ -93,6 +93,6 @@ resource "aws_instance" "dispatch" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "dispatch"
+    Name = "dispatch1"
   }
 }

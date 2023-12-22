@@ -3,5 +3,5 @@ data "aws_security_group" "workstation" {
 }
 
 output "security_groups" {
-  value = data.aws_security_group.workstation
+  value = data.aws_security_group.workstation.id
 }

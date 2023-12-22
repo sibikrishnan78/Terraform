@@ -1,7 +1,7 @@
-data "aws_security_group" "workstation" {
+data "aws_security_group" "selected" {
   name = "allow all"
 }
 
 output "security_groups_id" {
-  value = data.aws_security_group.workstation
+  value = data.aws_security_group.selected
 }

@@ -11,6 +11,7 @@ data "aws_security_group" "all-security" {
 variable "instance_type" {
   default = "t3.micro"
 }
+
 resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.id
   instance_type = var.instance_type

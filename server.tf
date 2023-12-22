@@ -128,7 +128,7 @@ resource "aws_instance" "shipping" {
 
 resource "aws_route53_record" "shipping" {
   zone_id = "Z08619273P4WVGQRW042K"
-  name    = "mysql.deveng23.online"
+  name    = "shipping.deveng23.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]

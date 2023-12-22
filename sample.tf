@@ -5,8 +5,9 @@ resource "aws_instance" "frontend" {
   tags = {
     Name = "frontend"
   }
+}
 
-resource "aws_route53_record" "frontend" {
+  resource "aws_route53_record" "frontend" {
     zone_id = "Z08619273P4WVGQRW042K"
     name    = "frontend.deveng23.online"
     type    = "A"

@@ -1,7 +1,9 @@
-data "aws_security_group" "workstation" {
-  name = "all-security"
+data "aws_ami" "centos" {
+  most_recent = true
+  owners      = ["973714476881"]
+  name_regex = "Centos-8-DevOps-Practice"
 }
 
-output "security_groups" {
-  value = data.aws_security_group.workstation.id
+output "centos_ami_id" {
+  value = data.aws_ami.centos
 }

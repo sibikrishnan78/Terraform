@@ -33,7 +33,7 @@ resource "aws_route53_record" "frontend" {
 resource "aws_instance" "mongodb" {
   ami           = data.aws_ami.centos.id
   instance_type = var.instance_type
-  security_groups = [ data.aws_security_group.all-security.id ]
+  security_group = [ data.aws_security_group.all-security.id ]
 
   tags = {
     Name = "mongodb"

@@ -5,5 +5,5 @@ data "aws_ami" "centos" {
 }
 
 output "centos_ami_id" {
-  value = data.aws_ami.centos
+  value = data.aws_ami.centos.id
 }

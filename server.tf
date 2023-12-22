@@ -15,7 +15,7 @@ variable "instance_type" {
 resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.id
   instance_type = var.instance_type
-  security_groups = [ data.aws_security_group.all-security.id ]
+  vpc_security_groups_ids = [ data.aws_security_group.all-security.id ]
 
   tags = {
     Name = "frontend"

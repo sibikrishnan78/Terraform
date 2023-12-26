@@ -1,6 +1,6 @@
 component = {
   frontend = {
-    name = "frontend"
+    name = "Frontend"
     instance_type = "t3.small"
   }
   mongodb = {
@@ -12,7 +12,7 @@ component = {
     instance_type = "t3.small"
   }
   redis = {
-    name = "redis"
+    name = "Redis"
     instance_type = "t3.small"
   }
   user = {

@@ -1,5 +1,5 @@
 component = {
-  frontend = {
+  Frontend = {
     name = "Frontend"
     instance_type = "t3.small"
   }
@@ -11,7 +11,7 @@ component = {
     name = "catalogue"
     instance_type = "t3.small"
   }
-  redis = {
+  Redis = {
     name = "Redis"
     instance_type = "t3.small"
   }
